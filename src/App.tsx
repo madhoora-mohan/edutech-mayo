@@ -2,9 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Home from "./pages/Home";
 import CodeTest from "./pages/CodeTest";
-import LeaderBoard from "./components/LeaderBoard";
 import LiveSession from "./pages/LiveSession";
 import PastContest from "./pages/PastContest";
+import LeaderBoard from "./pages/LeaderBoard";
 import Profile from "./pages/Profile";
 import Programming from "./pages/Programming";
 import Reports from "./pages/Reports";
@@ -13,7 +13,7 @@ import ChangePwd from "./pages/ChangePwd";
 
 function App() {
   return (
-    <div className="m-1 bg-zinc-800 h-screen min-w-screen">
+    <div className="m-2 bg-[#1F1F1E]  min-w-screen">
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/Login" element={<Login />} />
