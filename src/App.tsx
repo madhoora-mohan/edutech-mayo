@@ -13,19 +13,21 @@ import ChangePwd from "./pages/ChangePwd";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Landing />} />
-      <Route path="/Home" element={<Home />} />
-      <Route path="/Login" element={<Login />} />
-      <Route path="/ChangePwd" element={<ChangePwd />} />
-      <Route path="/CodeTest" element={<CodeTest />} />
-      <Route path="/LeaderBoard" element={<LeaderBoard />} />
-      <Route path="/LiveSession" element={<LiveSession />} />
-      <Route path="/PastContest" element={<PastContest />} />
-      <Route path="/Profile" element={<Profile />} />
-      <Route path="/Programming" element={<Programming />} />
-      <Route path="/Reports" element={<Reports />} />
-    </Routes>
+    <div className="m-1 bg-zinc-800 h-screen min-w-screen">
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/Login" element={<Login />} />
+        {true && <Route path="/ChangePwd" element={<ChangePwd />} />}
+        {true && <Route path="/Home" element={<Home />} />}
+        {true && <Route path="/CodeTest" element={<CodeTest />} />}
+        {true && <Route path="/LeaderBoard" element={<LeaderBoard />} />}
+        {true && <Route path="/LiveSession" element={<LiveSession />} />}
+        {true && <Route path="/PastContest" element={<PastContest />} />}
+        {true && <Route path="/Profile" element={<Profile />} />}
+        {true && <Route path="/Programming" element={<Programming />} />}
+        {true && <Route path="/Reports" element={<Reports />} />}
+      </Routes>
+    </div>
   );
 }
 

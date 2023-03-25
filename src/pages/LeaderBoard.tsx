@@ -1,9 +1,5 @@
-import React from 'react'
+const Ranks = () => {
+  return <div>LeaderBoard</div>;
+};
 
-const LeaderBoard = () => {
-  return (
-    <div>LeaderBoard</div>
-  )
-}
-
-export default LeaderBoard
+export default Ranks;
