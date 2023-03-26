@@ -1,21 +1,65 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import LandingNav from "../components/LandingNav";
 
 const Login = () => {
+  const [error, setError] = useState("");
+
+  type LoginFormState = {
+    loginid: string;
+    password: string;
+  };
+
+  const [formState, setFormState] = useState<LoginFormState>({
+    loginid: "",
+    password: "",
+  });
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    const { name, value } = event.target;
+    setFormState({ ...formState, [name]: value });
+  };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    console.log("Submitting login form:", formState);
+  };
+
   return (
     <>
       <LandingNav />
       <div className="h-[78vh] flex flex-col items-start p-10 gap-6">
-        <form className="w-2/5 flex flex-col items-start justify-center gap-2 p-16 pb-10 outline outline-[#373737] outline-1">
+        <form
+          onSubmit={handleSubmit}
+          className="w-2/5 flex flex-col items-start justify-center gap-2 p-16 pb-10 outline outline-[#373737] outline-1"
+        >
           <input
+            type="text"
             placeholder="Login Id"
-            className="w-full h-10 bg-white rounded-md pl-4"
-          ></input>
+            name="loginid"
+            onChange={handleChange}
+            value={formState.loginid}
+            required
+            className="w-full h-10 bg-white text-black rounded-md pl-4"
+          />
           <input
+            type="password"
             placeholder="Password"
-            className="w-full h-10 bg-white rounded-md pl-4"
-          ></input>
-          <button className="h-10 outline-none mt-4 text-white font-semibold rounded-md px-6 bg-[#2084D0] hover:bg-[#2089F9]">
+            name="password"
+            onChange={handleChange}
+            value={formState.password}
+            required
+            className="w-full h-10 bg-white text-black rounded-md pl-4"
+          />
+          {error && (
+            <div className="w-3/5 bg-red-400 text-white font-semibold text-sm">
+              {error}
+            </div>
+          )}
+          <button
+            type="submit"
+            className="h-10 outline-none mt-4 text-white font-semibold rounded-md px-6 bg-[#2084D0] hover:bg-[#2089F9]"
+          >
             Login
           </button>
         </form>
