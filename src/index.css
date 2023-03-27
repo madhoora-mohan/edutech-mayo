@@ -11,3 +11,15 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #000;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #343541;
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 11px;
+  background-color: #565869;
+  border-radius: 1rem;
+}

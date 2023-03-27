@@ -26,11 +26,11 @@ const Login = () => {
   };
 
   return (
-    <>
-      <div className="h-[78vh] flex flex-col items-start p-10 gap-6">
+    <div className="flex justify-center items-center w-full ">
+      <div className="w-full flex flex-col items-start p-10 gap-6 ">
         <form
           onSubmit={handleSubmit}
-          className="w-2/5 flex flex-col items-start justify-center gap-2 p-16 pb-10 outline outline-[#373737] outline-1"
+          className="w-2/5 flex flex-col items-start justify-center gap-2 p-16 pb-10 outline outline-[#373737] outline-1 ml-96 mt-10"
         >
           <input
             type="text"
@@ -57,18 +57,18 @@ const Login = () => {
           )}
           <button
             type="submit"
-            className="h-10 outline-none mt-4 text-white font-semibold rounded-md px-6 bg-[#2084D0] hover:bg-[#2089F9]"
+            className="h-10 outline-none mt-4 text-white font-semibold rounded-md px-6 bg-[#2084D0] hover:bg-[#2089F9] "
           >
             Login
           </button>
         </form>
         <Link to="/ChangePwd">
-          <button className="h-10 rounded-md bg-red-700 p-2 px-4 font-semibold">
+          <button className="h-10 rounded-md bg-red-700 p-2 px-4 font-semibold ml-96">
             Forgot password?
           </button>
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

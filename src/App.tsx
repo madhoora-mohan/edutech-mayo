@@ -12,14 +12,15 @@ import Login from "./pages/Login";
 import ChangePwd from "./pages/ChangePwd";
 import { Navbar } from "./components/Navbar";
 import LandingNav from "./components/LandingNav";
+import Articles from "./pages/Articles";
 
 function App() {
   return (
-    <div className="m-2 bg-[#1F1F1E]  min-w-screen">
+    <div className=" m-2 bg-[#1F1F1E] min-w-screen h-[97.5vh] overflow-auto">
       {/* replace bool with login validation */}
 
       {true ? <Navbar /> : <LandingNav />}
-      <div className="px-2 mt-2">
+      <div className="px-2 mt-24">
         <Routes>
           {/* {true ? (
           <Route path="/" element={<Home />} />
@@ -43,6 +44,7 @@ function App() {
           {true && <Route path="/LiveSession" element={<LiveSession />} />}
           {true && <Route path="/PastContest" element={<PastContest />} />}
           {true && <Route path="/Profile" element={<Profile />} />}
+          {true && <Route path="/Articles" element={<Articles />} />}
           {true && <Route path="/Programming" element={<Programming />} />}
           {true && <Route path="/Reports" element={<Reports />} />}
         </Routes>

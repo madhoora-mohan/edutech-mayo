@@ -3,9 +3,9 @@ import LeftNav from "../components/LeftNav";
 const Home = () => {
   return (
     <>
-      <div className="m-2 flex">
+      <div className="mt-4 mb-2 flex gap-2 w-[97.5vw]">
         <LeftNav />
-        <div>Home</div>
+        <div className="outline outline-1 outline-neutral-700 w-full">Home</div>
       </div>
     </>
   );

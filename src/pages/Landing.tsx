@@ -1,7 +1,7 @@
 const Landing = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center p-28">
+      <div className="flex flex-col justify-center items-center p-28 pt-4">
         <h1 className="text-3xl font-bold">Lorem Ipsum</h1>
         <p className="p-6">
           Lorem Ipsum is simply dummy text of the printing and typesetting
