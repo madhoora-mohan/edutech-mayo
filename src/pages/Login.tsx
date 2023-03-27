@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import LandingNav from "../components/LandingNav";
 
 const Login = () => {
   const [error, setError] = useState("");

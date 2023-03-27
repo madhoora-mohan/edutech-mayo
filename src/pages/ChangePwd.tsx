@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import LandingNav from "../components/LandingNav";
 
 const ChangePwd = () => {
   const [error, setError] = useState("");

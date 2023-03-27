@@ -17,32 +17,36 @@ function App() {
   return (
     <div className="m-2 bg-[#1F1F1E]  min-w-screen">
       {/* replace bool with login validation */}
+
       {true ? <Navbar /> : <LandingNav />}
-      <Routes>
-        {/* {true ? (
+      <div className="px-2 mt-2">
+        <Routes>
+          {/* {true ? (
           <Route path="/" element={<Home />} />
         ) : ( */}
-        <Route path="/" element={<Landing />} />
-        {/* )} */}
-        {/* {true ? (
+          <Route path="/" element={<Landing />} />
+          {/* )} */}
+          {/* {true ? (
           <Route path="/" element={<Home />} />
         ) : ( */}
-        <Route path="/Login" element={<Login />} />
-        {/* )} */}
-        {/* {true ? (
+          <Route path="/Login" element={<Login />} />
+          {/* )} */}
+          {/* {true ? (
           <Route path="/" element={<Home />} />
         ) : ( */}
-        <Route path="/ChangePwd" element={<ChangePwd />} />
-        {/* )} */}
-        {true && <Route path="/Home" element={<Home />} />}
-        {true && <Route path="/CodeTest" element={<CodeTest />} />}
-        {true && <Route path="/LeaderBoard" element={<LeaderBoard />} />}
-        {true && <Route path="/LiveSession" element={<LiveSession />} />}
-        {true && <Route path="/PastContest" element={<PastContest />} />}
-        {true && <Route path="/Profile" element={<Profile />} />}
-        {true && <Route path="/Programming" element={<Programming />} />}
-        {true && <Route path="/Reports" element={<Reports />} />}
-      </Routes>
+          <Route path="/ChangePwd" element={<ChangePwd />} />
+          {/* )} */}
+
+          {true && <Route path="/Home" element={<Home />} />}
+          {true && <Route path="/CodeTest" element={<CodeTest />} />}
+          {true && <Route path="/LeaderBoard" element={<LeaderBoard />} />}
+          {true && <Route path="/LiveSession" element={<LiveSession />} />}
+          {true && <Route path="/PastContest" element={<PastContest />} />}
+          {true && <Route path="/Profile" element={<Profile />} />}
+          {true && <Route path="/Programming" element={<Programming />} />}
+          {true && <Route path="/Reports" element={<Reports />} />}
+        </Routes>
+      </div>
     </div>
   );
 }

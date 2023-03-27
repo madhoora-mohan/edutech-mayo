@@ -7,9 +7,10 @@ export const Navbar = () => {
   };
   return (
     <>
-      <nav className="flex justify-between p-6">
+      <nav className="flex justify-between p-2 outline outline-1 outline-[#373737] rounded-sm">
         <Link to="/">
-          <img src={logo} alt="logo" className="w-36 rounded-sm" />
+          {/* <img src={logo} alt="logo" className="w-20 rounded-sm" /> */}
+          <h1 className="text-4xl">Cit skills</h1>
         </Link>
         <ul className="flex gap-6 justify-center items-center">
           <li>
@@ -46,6 +47,7 @@ export const Navbar = () => {
           </li>
           <li>
             <button
+              type="submit"
               onClick={logout}
               className="h-12 outline-none flex justify-center items-center text-white font-semibold rounded-md px-6 bg-[#2084D0] hover:bg-[#2372c6] hover:text-[#fdfdfd]"
             >

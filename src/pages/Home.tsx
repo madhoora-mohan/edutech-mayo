@@ -1,10 +1,10 @@
-import React from "react";
-import { Navbar } from "../components/Navbar";
+import LeftNav from "../components/LeftNav";
 
 const Home = () => {
   return (
     <>
-      <div>
+      <div className="m-2 flex">
+        <LeftNav />
         <div>Home</div>
       </div>
     </>
