@@ -16,32 +16,48 @@ export const Navbar = () => {
           <li>
             <Link
               to="/Home"
-              className="p-4 hover:bg-[#323234] hover:text-[#ababab]"
+              className="p-4 flex justify-center items-center hover:bg-[#323234] hover:text-[#ababab]"
             >
+              <img
+                src="https://img.icons8.com/material-outlined/22/99999a/home-page.png"
+                className="pr-2"
+              />
               Home
             </Link>
           </li>
           <li>
             <Link
               to="/Reports"
-              className="p-4 hover:bg-[#323234] hover:text-[#ababab]"
+              className="p-4 flex justify-center items-center   hover:bg-[#323234] hover:text-[#ababab]"
             >
+              <img
+                src="https://img.icons8.com/material-outlined/22/99999a/combo-chart.png"
+                className="pr-2"
+              />
               Reports
             </Link>
           </li>
           <li>
             <Link
               to="/Profile"
-              className="p-4 hover:bg-[#323234] hover:text-[#ababab]"
+              className="p-4 flex justify-center items-center hover:bg-[#323234] hover:text-[#ababab]"
             >
+              <img
+                src="https://img.icons8.com/material-outlined/22/99999a/user--v1.png"
+                className="pr-2"
+              />
               Profile
             </Link>
           </li>
           <li>
             <Link
               to="/LeaderBoard"
-              className="p-4 hover:bg-[#323234] hover:text-[#ababab]"
+              className="p-4 flex justify-center items-center hover:bg-[#323234] hover:text-[#ababab]"
             >
+              <img
+                src="https://img.icons8.com/material-outlined/24/99999a/leaderboard.png"
+                className="pr-2"
+              />
               LeaderBoard
             </Link>
           </li>

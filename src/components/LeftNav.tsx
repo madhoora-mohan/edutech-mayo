@@ -8,37 +8,60 @@ const LeftNav = () => {
           <li>
             <Link
               to="/CodeTest"
-              className="p-2 border-b border-neutral-700 hover:bg-[#323234]"
+              className="p-2 flex items-center border-b border-neutral-700 hover:bg-[#323234]"
             >
+              <img
+                src="https://img.icons8.com/material-outlined/20/99999a/source-code.png"
+                className="pr-2"
+              />
               Code Test
             </Link>
           </li>
           <li>
             <Link
               to="/Programming"
-              className="p-2 border-b border-neutral-700 hover:bg-[#323234] "
+              className="p-2 flex items-center border-b border-neutral-700 hover:bg-[#323234] "
             >
+              <img
+                src="https://img.icons8.com/material-outlined/20/99999a/code.png"
+                className="pr-2"
+              />
               Programming
             </Link>
           </li>
           <li>
             <Link
               to="/PastContest"
-              className="p-2 border-b border-neutral-700 hover:bg-[#323234] "
+              className="p-2 flex items-center border-b border-neutral-700 hover:bg-[#323234] "
             >
+              <img
+                src="https://img.icons8.com/material-outlined/20/99999a/historical.png"
+                className="pr-2"
+              />
               Past Contests
             </Link>
           </li>
           <li>
             <Link
               to="/LiveSession"
-              className="p-2 border-b border-neutral-700 hover:bg-[#323234] "
+              className="p-2 flex items-center border-b border-neutral-700 hover:bg-[#323234] "
             >
+              <img
+                src="https://img.icons8.com/material-outlined/20/99999a/youtube-live.png"
+                className="pr-2"
+              />
               Live Session
             </Link>
           </li>
           <li>
-            <Link to="/Articles" className="p-2 hover:bg-[#323234] ">
+            <Link
+              to="/Articles"
+              className="px-2 pb-2 flex items-center hover:bg-[#323234] "
+            >
+              <img
+                src="https://img.icons8.com/material-outlined/22/99999a/my-topic.png"
+                className="pr-2"
+              />
               Articles
             </Link>
           </li>
