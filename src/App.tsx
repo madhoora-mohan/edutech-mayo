@@ -10,13 +10,15 @@ import Programming from "./pages/Programming";
 import Reports from "./pages/Reports";
 import Login from "./pages/Login";
 import ChangePwd from "./pages/ChangePwd";
+import { Navbar } from "./components/Navbar";
+import LandingNav from "./components/LandingNav";
 
 function App() {
   return (
     <div className="m-2 bg-[#1F1F1E]  min-w-screen">
+      {/* replace bool with login validation */}
+      {true ? <Navbar /> : <LandingNav />}
       <Routes>
-        {/* replace true with login validation */}
-
         {/* {true ? (
           <Route path="/" element={<Home />} />
         ) : ( */}

@@ -1,10 +1,6 @@
-import LandingNav from "../components/LandingNav";
-
 const Landing = () => {
   return (
     <>
-      <LandingNav />
-
       <div className="flex flex-col justify-center items-center p-28">
         <h1 className="text-3xl font-bold">Lorem Ipsum</h1>
         <p className="p-6">

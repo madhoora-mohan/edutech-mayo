@@ -28,7 +28,6 @@ const Login = () => {
 
   return (
     <>
-      <LandingNav />
       <div className="h-[78vh] flex flex-col items-start p-10 gap-6">
         <form
           onSubmit={handleSubmit}

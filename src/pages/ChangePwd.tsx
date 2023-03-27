@@ -25,7 +25,6 @@ const ChangePwd = () => {
   };
   return (
     <div className="h-[97.5vh]">
-      <LandingNav />
       <div className="flex justify-center">
         <div className="w-1/3 outline outline-1 outline-[#343434] p-4 m-20">
           <h3 className="text-base pl-8 pt-8">
