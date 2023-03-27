@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const LandingNav = () => {
   return (
     <>
-      <div className="fixed  w-[98.4%] flex justify-between p-5 items-center bg-[#1F1F1E] outline outline-1 outline-[#373737] rounded-sm shadow-lg shadow-[#1313135e]">
+      <div className="fixed  w-[98.4%] flex justify-between p-5 items-center bg-[#1F1F1E] outline outline-1 outline-[#373737] rounded-sm shadow-lg shadow-[#131313b8]">
         <Link to="/">
           {/* <img src={logo} alt="logo" className="w-36 rounded-sm" /> */}
           <h1 className="text-4xl">Cit skills</h1>
