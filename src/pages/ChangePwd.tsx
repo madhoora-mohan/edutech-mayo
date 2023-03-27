@@ -20,6 +20,7 @@ const ChangePwd = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
+    //add submit logic here
     console.log("Submitting ChangePwd form:", formState);
   };
   return (
@@ -51,7 +52,7 @@ const ChangePwd = () => {
             </button>
           </form>
           {error && (
-            <div className="w-1/5 bg-red-400 text-white font-semibold text-sm">
+            <div className="w-4/6 bg-red-400 text-white font-semibold text-sm">
               {error}
             </div>
           )}

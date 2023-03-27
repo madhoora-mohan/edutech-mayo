@@ -9,7 +9,7 @@ const LandingNav = () => {
           <img src={logo} alt="logo" className="w-36 " />
         </Link>
         <Link to="/login">
-          <button className="h-12 outline-none  text-black rounded-md px-8 font-normal bg-[#2084D0] hover:bg-[#2089F9] hover:text-black">
+          <button className="h-12 outline-none flex justify-center items-center text-white font-semibold rounded-md px-8 bg-[#2084D0] hover:bg-[#2089F9] hover:text-[#fdfdfd]">
             Login
           </button>
         </Link>

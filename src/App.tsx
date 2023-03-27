@@ -15,9 +15,23 @@ function App() {
   return (
     <div className="m-2 bg-[#1F1F1E]  min-w-screen">
       <Routes>
+        {/* replace true with login validation */}
+
+        {/* {true ? (
+          <Route path="/" element={<Home />} />
+        ) : ( */}
         <Route path="/" element={<Landing />} />
+        {/* )} */}
+        {/* {true ? (
+          <Route path="/" element={<Home />} />
+        ) : ( */}
         <Route path="/Login" element={<Login />} />
-        {true && <Route path="/ChangePwd" element={<ChangePwd />} />}
+        {/* )} */}
+        {/* {true ? (
+          <Route path="/" element={<Home />} />
+        ) : ( */}
+        <Route path="/ChangePwd" element={<ChangePwd />} />
+        {/* )} */}
         {true && <Route path="/Home" element={<Home />} />}
         {true && <Route path="/CodeTest" element={<CodeTest />} />}
         {true && <Route path="/LeaderBoard" element={<LeaderBoard />} />}
