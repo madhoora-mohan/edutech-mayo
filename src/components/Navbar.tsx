@@ -7,7 +7,7 @@ export const Navbar = () => {
   };
   return (
     <>
-      <nav className="fixed bg-[#1F1F1E] flex justify-between p-4 rounded-sm  w-[98.4%] shadow-lg shadow-[#131313b8]">
+      <nav className="fixed bg-[#1F1F1E] flex justify-between p-4 rounded-sm  w-[98.8%] shadow-lg shadow-[#131313b8]">
         <Link to="/Home">
           {/* <img src={logo} alt="logo" className="w-20 rounded-sm" /> */}
           <h1 className="text-4xl">Cit skills</h1>

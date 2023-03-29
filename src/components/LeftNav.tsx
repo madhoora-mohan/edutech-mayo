@@ -7,14 +7,14 @@ const LeftNav = () => {
         <ul className="flex flex-col gap-6">
           <li>
             <Link
-              to="/CodeTest"
+              to="/Test"
               className="p-2 flex items-center border-b border-neutral-700 hover:bg-[#323234]"
             >
               <img
                 src="https://img.icons8.com/material-outlined/20/99999a/source-code.png"
                 className="pr-2"
               />
-              Code Test
+              Code/MCQ Test
             </Link>
           </li>
           <li>

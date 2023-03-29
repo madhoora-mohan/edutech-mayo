@@ -39,7 +39,7 @@ function App() {
           {/* )} */}
 
           {true && <Route path="/Home" element={<Home />} />}
-          {true && <Route path="/CodeTest" element={<CodeTest />} />}
+          {true && <Route path="/Test" element={<CodeTest />} />}
           {true && <Route path="/LeaderBoard" element={<LeaderBoard />} />}
           {true && <Route path="/LiveSession" element={<LiveSession />} />}
           {true && <Route path="/PastContest" element={<PastContest />} />}
