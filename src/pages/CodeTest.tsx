@@ -6,7 +6,7 @@ const CodeTest = () => {
     <>
       <div className="mt-4 mb-2 flex gap-2 w-[97.5vw]">
         <LeftNav />
-        <div className="outline outline-1 outline-neutral-700 w-full myClassName">
+        <div className="outline outline-1 p-4 outline-neutral-700 w-full myClassName">
           MCQ/Code Test <br />
           <div className="grid grid-rows-2 grid-flow-col gap-y-2">
             <div>
